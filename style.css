@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: hsl(235, 18%, 26%);
+}
+
+section.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 850px;
+}
+.hide {
+  display: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.first-paragraph {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#lists {
+  display: block;
+  margin-right: 0.75rem;
+}
+
+#illustration {
+  display: block;
+}
+
+article:first-child {
+  margin-right: 0.5rem;
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+input:focus {
+  width: 100%;
+  margin: auto;
+  height: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-radius: 10px;
+  outline: none;
+  background-color: white;
+  color: black;
+}
+button {
+  width: 100%;
+  margin: auto;
+  height: 3rem;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+}
+
+.success-message {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 380px;
+}
+
+.icon {
+  width: 3rem;
+  height: 4rem;
+  background: url(/assets/images/icon-success.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
+
+.success-message button {
+  width: 100%;
+}
+
+.input-invalid {
+  border: 1px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+  background-color: hsla(4, 100%, 67%, 0.2);
+}
+
+.error-state {
+  color: hsl(4, 100%, 67%);
+  font-weight: 100;
+}
+
+span {
+  font-weight: bold;
+}
